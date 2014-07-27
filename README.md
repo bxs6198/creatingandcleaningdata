@@ -24,45 +24,45 @@ The raw data for the project was obtained here.
 
 The downloaded data file is a compressed .zip file containing the following directory structure.
 
-- UCI HAR Dataset/activity_labels.txt
-- UCI HAR Dataset/features.txt
-- UCI HAR Dataset/features_info.txt
-- UCI HAR Dataset/README.txt
-- UCI HAR Dataset/test/Inertial Signals/body_acc_x_test.txt
-- UCI HAR Dataset/test/Inertial Signals/body_acc_y_test.txt
-- UCI HAR Dataset/test/Inertial Signals/body_acc_z_test.txt
-- UCI HAR Dataset/test/Inertial Signals/body_gyro_x_test.txt
-- UCI HAR Dataset/test/Inertial Signals/body_gyro_y_test.txt
-- UCI HAR Dataset/test/Inertial Signals/body_gyro_z_test.txt
-- UCI HAR Dataset/test/Inertial Signals/total_acc_x_test.txt
-- UCI HAR Dataset/test/Inertial Signals/total_acc_y_test.txt
-- UCI HAR Dataset/test/Inertial Signals/total_acc_z_test.txt
-- UCI HAR Dataset/test/subject_test.txt
-- UCI HAR Dataset/test/X_test.txt
-- UCI HAR Dataset/test/y_test.txt
-- UCI HAR Dataset/train/Inertial Signals/body_acc_x_train.txt
-- UCI HAR Dataset/train/Inertial Signals/body_acc_y_train.txt
-- UCI HAR Dataset/train/Inertial Signals/body_acc_z_train.txt
-- UCI HAR Dataset/train/Inertial Signals/body_gyro_x_train.txt
-- UCI HAR Dataset/train/Inertial Signals/body_gyro_y_train.txt
-- UCI HAR Dataset/train/Inertial Signals/body_gyro_z_train.txt
-- UCI HAR Dataset/train/Inertial Signals/total_acc_x_train.txt
-- UCI HAR Dataset/train/Inertial Signals/total_acc_y_train.txt
-- UCI HAR Dataset/train/Inertial Signals/total_acc_z_train.txt
-- UCI HAR Dataset/train/subject_train.txt
-- UCI HAR Dataset/train/X_train.txt
-- UCI HAR Dataset/train/y_train.txt
+    UCI HAR Dataset/activity_labels.txt
+    UCI HAR Dataset/features.txt
+    UCI HAR Dataset/features_info.txt
+    UCI HAR Dataset/README.txt
+    UCI HAR Dataset/test/Inertial Signals/body_acc_x_test.txt
+    UCI HAR Dataset/test/Inertial Signals/body_acc_y_test.txt
+    UCI HAR Dataset/test/Inertial Signals/body_acc_z_test.txt
+    UCI HAR Dataset/test/Inertial Signals/body_gyro_x_test.txt
+    UCI HAR Dataset/test/Inertial Signals/body_gyro_y_test.txt
+    UCI HAR Dataset/test/Inertial Signals/body_gyro_z_test.txt
+    UCI HAR Dataset/test/Inertial Signals/total_acc_x_test.txt
+    UCI HAR Dataset/test/Inertial Signals/total_acc_y_test.txt
+    UCI HAR Dataset/test/Inertial Signals/total_acc_z_test.txt
+    UCI HAR Dataset/test/subject_test.txt
+    UCI HAR Dataset/test/X_test.txt
+    UCI HAR Dataset/test/y_test.txt
+    UCI HAR Dataset/train/Inertial Signals/body_acc_x_train.txt
+    UCI HAR Dataset/train/Inertial Signals/body_acc_y_train.txt
+    UCI HAR Dataset/train/Inertial Signals/body_acc_z_train.txt
+    UCI HAR Dataset/train/Inertial Signals/body_gyro_x_train.txt
+    UCI HAR Dataset/train/Inertial Signals/body_gyro_y_train.txt
+    UCI HAR Dataset/train/Inertial Signals/body_gyro_z_train.txt
+    UCI HAR Dataset/train/Inertial Signals/total_acc_x_train.txt
+    UCI HAR Dataset/train/Inertial Signals/total_acc_y_train.txt
+    UCI HAR Dataset/train/Inertial Signals/total_acc_z_train.txt
+    UCI HAR Dataset/train/subject_train.txt
+    UCI HAR Dataset/train/X_train.txt
+    UCI HAR Dataset/train/y_train.txt
 
 Only the following eight files are actually required to complete the project.
 
-- UCI HAR Dataset/activity_labels.txt
-- UCI HAR Dataset/features.txt
-- UCI HAR Dataset/test/subject_test.txt
-- UCI HAR Dataset/test/X_test.txt
-- UCI HAR Dataset/test/y_test.txt
-- UCI HAR Dataset/train/subject_train.txt
-- UCI HAR Dataset/train/X_train.txt
-- UCI HAR Dataset/train/y_train.txt
+    UCI HAR Dataset/activity_labels.txt
+    UCI HAR Dataset/features.txt
+    UCI HAR Dataset/test/subject_test.txt
+    UCI HAR Dataset/test/X_test.txt
+    UCI HAR Dataset/test/y_test.txt
+    UCI HAR Dataset/train/subject_train.txt
+    UCI HAR Dataset/train/X_train.txt
+    UCI HAR Dataset/train/y_train.txt
 
 #### Data Set information ####
 The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING\_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
