@@ -214,5 +214,5 @@ names(tidyData) = tidynames
 ##
 
 ## Write the tidyData data frame out as a comma separated value (.csv) text
-## file "tidydataset.csv" into the current working directory.
-write.csv(tidyData, file="./tidydataset.csv", row.names=FALSE)
+## file "tidydataset.txt" into the current working directory.
+write.csv(tidyData, file="./tidydataset.txt", row.names=FALSE)
