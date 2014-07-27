@@ -160,6 +160,36 @@ The `run_analysis.R` script performs all the data analysis and generates a tidy 
 5. Creates a second, independent tidy data set with the average of each variable for each activity and
 each subject.
 
+#### Algorithm Details ####
+
+##### STEP 0: RStudio and directory environment configuration. #####
+Not addressed in the instructions is ensuring that dependent user libraries are loaded into the R environment and all directories exist in the current working directory.  All RStudio and directory environment configurations are executed prior to starting the
+
+##### STEP 1: Merge the training and test sets to create one data set. #####
+The source data file must first be downloaded from the Internet and then unzipped within the data directory creating a sub-directory called 'UCI HAR Dataset'.  After the file has been unzipped, the eight required files are then read into data frames  using the read.table() function.
+
+##### STEP 2: Extract only the measurements on the mean and standard deviation for each measurement. #####
+An understanding of the measurements recorded is critical in order to determine which measurements need to be extracted.  Reading and understanding the `README.txt`, `features_info.txt`, `features.txt`, and `activity_labels.txt` files located in the 'UCI HAR Dataset' root directory will provide the requisite information.
+
+Before the measurements on the mean and standard deviation for each measurement can be extracted, some processing must be done to the names of the data frame elements.  In the previous step, the resulting data frames were left with generic labels V1, V2, etc. The feature labels need to be added to those data frames.  Once that has been done, then the columns containing the mean and standard deviation measurements can be accomplished. After this step in the process, 66 out of 561 features are extracted.
+
+##### STEP 3: Use descriptive activity names to name the activities in the data set. #####
+This step replaces the integer values in the activity feature with their corresponding text values.  Understanding how to convert the activity integer into a factor based on the activity labels is critical to this step.
+
+##### STEP 4: Appropriately labels the data set with descriptive variable names. #####
+This is where the bulk of the data analysis takes place.  All the individual data frames need to be merged into one big data frame.  The subject, activity, and measurement data for the test and training data sets must be merged using the cbind() function.  Once that has been accomplished the test data is appended to the training data using the rbind() function.
+
+After all the data has been merged, the data must be made 'tidy' following the rules for tidy data.  A good understanding of how to reshape the data using the melt() and dcast() functions from the plyr package is a must.
+
+Finally, all the variable names must be converted from their short-hand notation in the original data to descriptive variable names.  Understanding how to formulate a regular expression using the gsub() function is a must here as well.
+
+##### STEP 5: Create an independent tidy data set with the average of each variable for each activity and each subject. #####
+Last, but not least, the resulting tidy data set must be exported out of the RStudio environment into a text file in the current working directory.  In this instance, a comma separated values (.csv) text file is output with the name "tidydataset.txt" using the write.csv() function.  Normally, the file should have a .csv file extension, but due to upload restrictions by Coursera (.csv files are not allowed) the file must have a .txt file extension.
+
+Comma separated values (.csv) files are easily imported into RStudio using the read.csv() function or into a third-party spreadsheet program like Microsoft Excel.
+
+#### Notes ####
+
 See the `run_analysis.R` script file for detailed comments on how the script performs the data analysis.
 
 ### Output Data ###

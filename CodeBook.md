@@ -6,7 +6,7 @@ This CodeBook explains the `tidydataset.txt` comma separated values data set fil
 #### Data Structure ####
 `tidydataset.txt` is a comma separated values text file with the following structure.
 
-Feature | Datatype | Description
+Variable | Datatype | Description
 :--- | :--- | :---
 subjectid | integer | The subject who performed the activity for each window sample (a value between 1 and 30).
 activity | character | The activity performed (WALKING, WALKING\_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING).
